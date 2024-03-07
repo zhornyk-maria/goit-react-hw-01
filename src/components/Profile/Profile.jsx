@@ -1,3 +1,5 @@
+import clsx from "clsx";
+import css from "./Profile.module.css";
 
 const Profile = ({
     image = "https://cdn-icons-png.flaticon.com/512/2922/2922506.png/640x480/2a2a2a/ffffff&text=Profile+image+placeholder",
@@ -6,18 +8,18 @@ const Profile = ({
     location,
     stats }) => {
     return (
-        <div className="profileContainer">
-          <div>
+        <div className={css.profileContainer}>
+          <div className={css.userInfo}>
             <img
               src={image}
               alt={name}
             />
-            <p>{name}</p>
-            <p>@{tag}</p>
-            <p>{location}</p>
+            <p className={css.userName}>{name}</p>
+            <p className={css.userTag}>@{tag}</p>
+            <p className={css.userLocation}>{location}</p>
           </div>
 
-          <ul>
+          <ul className={css.userStats}>
             <li>
               <span>Followers</span>
               <span>{stats.followers}</span>

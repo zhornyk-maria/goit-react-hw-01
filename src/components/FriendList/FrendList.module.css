@@ -1,0 +1,39 @@
+.friendsContainer {
+  margin: 0 auto 40px;
+  max-width: 500px;
+}
+
+.friendsList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.friendsListItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #111;
+  border-radius: 5px;
+  min-width: 80px;
+}
+
+.friendAvatar {
+  margin-bottom: 20px;
+}
+
+.friendName {
+  font-weight: 600;
+}
+
+.friendStatus {
+  font-weight: 500;
+}
+
+.friendStatus.isOnline {
+  color: rgb(6, 197, 6);
+}
+
+.friendStatus.isOffline {
+  color: rgb(254, 12, 12);
+}
