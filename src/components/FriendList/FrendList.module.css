@@ -17,23 +17,3 @@
   border-radius: 5px;
   min-width: 80px;
 }
-
-.friendAvatar {
-  margin-bottom: 20px;
-}
-
-.friendName {
-  font-weight: 600;
-}
-
-.friendStatus {
-  font-weight: 500;
-}
-
-.friendStatus.isOnline {
-  color: rgb(6, 197, 6);
-}
-
-.friendStatus.isOffline {
-  color: rgb(254, 12, 12);
-}
